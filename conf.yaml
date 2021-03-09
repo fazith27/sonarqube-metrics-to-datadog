@@ -1,0 +1,13 @@
+ad_identifiers:
+  - sonarqube
+
+init_config:
+    is_jmx: false
+    collect_default_metrics: true
+instances:
+  -
+    web_endpoint: http://$(sonarqube_api_token):@sonarqube:9000
+    components:
+      project1:
+      project2:
+      project3:
